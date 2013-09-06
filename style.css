@@ -365,3 +365,13 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+/* COLORS */
+/* NAV */
+nav {
+  width: 100%;
+  background: #fff;
+  height: 50px;
+  position: fixed;
+  -webkit-box-shadow: 0 8px 6px -6px #9b9b9b;
+  -moz-box-shadow: 0 8px 6px -6px #9b9b9b;
+  box-shadow: 0 8px 6px -6px #9b9b9b; }

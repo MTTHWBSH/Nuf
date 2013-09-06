@@ -1,1 +1,11 @@
 @import "responsive";
+
+/* NAV */
+
+nav	{
+	width: 100%;
+	background: #fff;
+	height: 50px;
+	position: fixed;
+	@include bottom-shadow;
+}

@@ -13,6 +13,18 @@
       "initialSize" : 34138,
       "fileType" : 8192
     },
+    "\/scss\/base.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/scss\/base.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/functions.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -132,17 +144,14 @@
       "outputAbbreviatedPath" : "\/js\/plugins-ck.js",
       "fileType" : 64
     },
-    "\/scss\/base.scss" : {
+    "\/style.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/scss\/base.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/style.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     },
     "\/header.php" : {
       "ignoreWasSetByUser" : 0,
@@ -185,14 +194,14 @@
       "outputAbbreviatedPath" : "\/js\/main-ck.js",
       "fileType" : 64
     },
-    "\/style.css" : {
+    "\/nav.php" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/nav.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     }
   },
   "manualImportLinks" : [
