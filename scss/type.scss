@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+
+h1, h2, h3, h4, h5, h6	{
+	margin: 0;
+}
+
+
+body	{
+	font-family: $noto;
+}
+
+@font-face {
+	font-family: 'icons';
+	src:url('../Beerd/fonts/icons.eot');
+	src:url('../Beerd/fonts/icons.eot?#iefix') format('embedded-opentype'),
+		url('../Beerd/fonts/icons.woff') format('woff'),
+		url('../Beerd/fonts/icons.ttf') format('truetype'),
+		url('../Beerd/fonts/icons.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	font-family: 'icons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter, .icon-linkedin, .icon-arrow-down-alt1, .icon-menu, .icon-mail, .icon-home, .icon-file, .icon-arrow-up-alt1 {
+	font-family: 'icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e002";
+}
+.icon-linkedin:before {
+	content: "\e001";
+}
+.icon-arrow-down-alt1:before {
+	content: "\e007";
+}
+.icon-menu:before {
+	content: "\e000";
+}
+.icon-mail:before {
+	content: "\e004";
+}
+.icon-home:before {
+	content: "\e003";
+}
+.icon-file:before {
+	content: "\e005";
+}
+.icon-arrow-up-alt1:before {
+	content: "\e006";
+}
+
+body	{
+	color: $grayDark;
+}
+
+a	{
+	 color: $grayDark;
+	 @include transition(all, 0.3s, ease-in-out);
+	 text-decoration: none;
+	 &:hover	{
+		 color: $teal;
+	 }
+}
+
+/* NAV */
+
+nav	{
+	ul	{
+		font-size: 24px;
+		line-height: 24px;
+	}
+	a	{
+		position: relative;
+	}
+	a::after {
+		position: absolute;
+		top: -6px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: $teal;
+		content: '';
+		opacity: 0;
+		-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+		-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+		transition: height 0.3s, opacity 0.3s, transform 0.3s;
+		-webkit-transform: translateY(-10px);
+		-moz-transform: translateY(-10px);
+		transform: translateY(-10px);
+		}
+		a:hover::after, .cl-effect-4 a:focus::after {
+			height: 4px;
+			opacity: 1;
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			transform: translateY(0px);
+		}	
+}
+
+/* HERO */
+
+#hero	{
+	h1	{
+		text-align: center;
+		font-size: 90px;
+		letter-spacing: 4px;
+		padding-top: 100px;
+		color: #fff;
+		font-weight: bold;
+		opacity: .8;
+	}
+}
+
+/* MAIN */
+
+section	{
+	padding-top: 55px;
+	h2	{
+		text-align: center;
+		font-size: 48px;
+		font-weight: 100;
+		font-family: $archivo;
+		color: $gray;
+		border-bottom: 3px dotted $tan;
+	}
+}
+
+
+

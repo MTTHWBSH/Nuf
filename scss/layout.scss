@@ -5,7 +5,62 @@
 nav	{
 	width: 100%;
 	background: #fff;
-	height: 50px;
+	height: auto;
 	position: fixed;
-	@include bottom-shadow;
+	z-index: 1100;
+	@include box-shadow(0, 8px, 6px, -6px, $gray);
+	padding: 10px;
+	li {
+		padding-right: 28px;
+		&:first-child	{
+			padding-left: 18px;
+		}
+	}
 }
+
+/* MAIN */
+
+main	{
+	@include box-shadow(0px, -8px, 20px, -5px, $grayDark);
+	min-height: 1200px;
+	z-index: 1000;
+}
+
+.container	{
+	width: 1200px;
+	margin: auto;
+}
+
+section	{
+	&#hero	{
+		height: 480px;
+		background-image: url('../Beerd/img/hero.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		z-index: 0;
+		ul	{
+			text-align: center;
+			color: #fff;
+			li {
+				letter-spacing: 2px;
+				font-size: 22px;
+				opacity: .8;
+				&:last-child	{
+					&:after	{
+						content: none;
+					}
+				}
+				&:after	{
+					content: "   +   ";
+					color: $red;
+					opacity: .65;
+				}
+			}
+		}
+	}
+	&#work	{
+		
+	}	
+}
+

@@ -21,13 +21,27 @@
         <![endif]-->
         
 <nav>
-	<ul class="social unstyled">
-		<li></li>
-		<li></li>
-		<li></li>
+	<ul class="unstyled inline">
+		<?php if (is_front_page()) { ?>
+		<li><a href="#hero"><span aria-hidden="true" class="icon-home"></span></a></li>
+		<li><a href="#work">work</a></li>
+		<li><a href="#resume">resume</a></li>
+		<li><a href="#contact">contact</a></li>
+		<?php } ?>
+		<?php if (is_front_page()) { } else { ?>
+		<li><a href="<?php bloginfo('template_url'); ?>"><span aria-hidden="true" class="icon-home"></span></a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>#work">work</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>#resume">resume</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>#contact">contact</a></li>
+		<?php } ?>
 	</ul>	
 </nav>
 
-<section class="hero">
-
+<section id="hero">
+	<h1>DanNufer</h1>
+	<ul class="unstyled inline">
+		<li>UI Architect</li>
+		<li>Content Strategist</li>
+		<li>Accessibility Evangelist</li>
+	</ul>
 </section>
