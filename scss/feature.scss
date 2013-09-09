@@ -1,0 +1,40 @@
+.feature	{
+	width: 100%;
+	.thumbnail	{
+		width: 65%;
+		a	{
+			img	{
+				opacity: .4;
+				width: 100%;
+				height: auto;
+				&:hover	{
+					opacity: 1.0;
+					@include transition(all, 0.3s, ease-in-out);
+				}
+			}
+		}
+	}
+	aside	{
+		width: 30%;
+		padding-left: 5%;
+		float: left;
+	}
+	h3	{
+		font-size: 28px;
+		padding-bottom: 10px;
+		a	{
+			color: $teal;
+			&:hover	{
+				color: $tan;
+			}
+		}
+	}
+	h5	{
+		font-size: 18px;
+		font-weight: 100;
+		color: $gray;
+	}
+	p	{
+		margin: 0;
+	}
+}

@@ -19,25 +19,51 @@
             your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve 
             your experience.</p>
         <![endif]-->
+<div id="home"></div>        
         
 <nav>
-	<ul class="unstyled inline">
+	<ul class="unstyled inline nav">
 		<?php if (is_front_page()) { ?>
-		<li><a href="#hero"><span aria-hidden="true" class="icon-home"></span></a></li>
+		<li><a href="#home"><span aria-hidden="true" class="icon-home"></span></a></li>
 		<li><a href="#work">work</a></li>
 		<li><a href="#resume">resume</a></li>
 		<li><a href="#contact">contact</a></li>
 		<?php } ?>
 		<?php if (is_front_page()) { } else { ?>
-		<li><a href="<?php bloginfo('template_url'); ?>"><span aria-hidden="true" class="icon-home"></span></a></li>
-		<li><a href="<?php bloginfo('template_url'); ?>#work">work</a></li>
-		<li><a href="<?php bloginfo('template_url'); ?>#resume">resume</a></li>
-		<li><a href="<?php bloginfo('template_url'); ?>#contact">contact</a></li>
+		<li><a href="http://nuferdan.com"><span aria-hidden="true" class="icon-home"></span></a></li>
+		<li><a href="http://nuferdan.com#work">work</a></li>
+		<li><a href="http://nuferdan.com#resume">resume</a></li>
+		<li><a href="http://nuferdan.com#contact">contact</a></li>
 		<?php } ?>
-	</ul>	
+	</ul>
+	<a id="menu" href= "#sidr"><span aria-hidden="true" class="icon-menu"></a>	
 </nav>
 
-<section id="hero">
+<!-- MOBILE NAV -->
+
+<div id="sidr">
+	<ul class="unstyled">
+		<?php if (is_front_page()) { ?>
+		<li><a href="#home"><span aria-hidden="true" class="icon-home"></span></a></li>
+		<li><a href="#work">work</a></li>
+		<li><a href="#resume">resume</a></li>
+		<li><a href="#contact">contact</a></li>
+		<?php } ?>
+		<?php if (is_front_page()) { } else { ?>
+		<li><a href="http://nuferdan.com"><span aria-hidden="true" class="icon-home"></span></a></li>
+		<li><a href="http://nuferdan.com#work">work</a></li>
+		<li><a href="http://nuferdan.com#resume">resume</a></li>
+		<li><a href="http://nuferdan.com#contact">contact</a></li>
+		<?php } ?>
+	</ul>
+</div>
+
+<section id="hero" data-type="background" data-speed="10">
+	<!-- <video autoplay loop class="fillWidth">
+	<source src="<?php bloginfo('template_url'); ?>/img/hero.mp4" type="video/mp4"/>
+	<source src="<?php bloginfo('template_url'); ?>/img/hero.ogg" type="video/ogg"/>
+	<source src="<?php bloginfo('template_url'); ?>/img/hero.webm" type="video/webm"/>
+	</video> -->
 	<h1>DanNufer</h1>
 	<ul class="unstyled inline">
 		<li>UI Architect</li>

@@ -84,8 +84,8 @@ a	{
 /* NAV */
 
 nav	{
+	font-size: 24px;
 	ul	{
-		font-size: 24px;
 		line-height: 24px;
 	}
 	a	{
@@ -133,7 +133,6 @@ nav	{
 /* MAIN */
 
 section	{
-	padding-top: 55px;
 	h2	{
 		text-align: center;
 		font-size: 48px;
@@ -141,6 +140,84 @@ section	{
 		font-family: $archivo;
 		color: $gray;
 		border-bottom: 3px dotted $tan;
+		margin-bottom: 30px;
+	}
+	&#resume	{
+		h2	{
+			a {
+				font-size: 32px;
+				&:before	{
+					content: "(";
+				}
+				&:after	{
+					content: ")";
+				}
+				span	{
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}
+
+/* FOOTER */
+
+footer	{
+	text-align: center;
+	color: #fff;
+	p	{
+		font-size: 14px;
+	}
+	li	{
+		font-size: 14px;
+	}
+	h4	{
+		font-weight: 300;
+	}
+	a 	{
+		color: #fff;
+		border-bottom: 1px dotted #fff;
+		&:hover	{
+			color: $red;
+		}
+	}
+}
+
+/* SINGLE */
+
+#single	{
+	padding-bottom: 75px;
+	a	{
+		border-bottom: 1px dotted $tan;
+	}
+	h3	{
+		font-size: 28px;
+		color: $teal;
+		}
+	h5	{
+		font-size: 18px;
+		font-weight: 100;
+		color: $gray;
+	}
+}
+
+/* 404 */
+
+.error	{
+	text-align: center;
+	padding-top: 30px;
+	h1	{
+		color: $teal;
+	}
+	h3	{
+		color: $gray;
+		a	{
+			color: $gray;
+			border-bottom: 1px dotted $tan;
+			&:hover	{
+				color: $tan;
+			}
+		}
 	}
 }
 
