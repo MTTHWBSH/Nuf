@@ -99,3 +99,17 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#menu').sidr();
 });
+
+$(document).ready(function() {
+	
+	
+	$('#video').videoBG({
+		mp4:'hero.mp4',
+		ogv:'hero.ogv',
+		webm:'hero.webm',
+		poster:'hero.png',
+		scale:true,
+		zIndex:0
+	});
+		
+})

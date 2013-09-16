@@ -77,13 +77,21 @@ main	{
 #hero	{
 	height: 400px;
 	overflow: hidden;
+	#video	{
+		width:100%;
+		display: block;
+		height: 400px;
+		margin:0 auto;
+		.videoBG	{
+			position: static !important;
+		}
+	}
 }
 
 section	{
 	@include transition(all, 0.3s, ease-in-out);
 	padding-top: 75px;
 	&#hero	{
-		background-image: url('../Beerd/img/hero.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 100%;
@@ -93,6 +101,8 @@ section	{
 		video	{
 			position: absolute;
 			width: 100%;
+			height: auto;
+			margin-top: -100px;
 		}
 		ul	{
 			text-align: center;
@@ -156,4 +166,10 @@ footer	{
 			@include transition(all, 0.3s, ease-in-out);
 		}
 	}
+}
+
+/* 404 */
+
+.error	{
+	min-height: 800px;
 }

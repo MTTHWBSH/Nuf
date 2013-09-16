@@ -487,6 +487,13 @@ main {
 #hero {
   height: 400px;
   overflow: hidden; }
+  #hero #video {
+    width: 100%;
+    display: block;
+    height: 400px;
+    margin: 0 auto; }
+    #hero #video .videoBG {
+      position: static !important; }
 
 section {
   -webkit-transition: all 0.3s ease-in-out;
@@ -496,7 +503,6 @@ section {
   transition: all 0.3s ease-in-out;
   padding-top: 75px; }
   section#hero {
-    background-image: url("../Beerd/img/hero.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -505,7 +511,9 @@ section {
     padding-top: 45px; }
     section#hero video {
       position: absolute;
-      width: 100%; }
+      width: 100%;
+      height: auto;
+      margin-top: -100px; }
     section#hero ul {
       text-align: center;
       color: #fff; }
@@ -552,6 +560,10 @@ footer {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+
+/* 404 */
+.error {
+  min-height: 800px; }
 
 .feature {
   width: 100%; }
@@ -692,7 +704,7 @@ nav {
   text-align: center;
   font-size: 90px;
   letter-spacing: 4px;
-  padding-top: 100px;
+  margin-top: -300px;
   color: #fff;
   font-weight: bold;
   opacity: .8; }
@@ -760,15 +772,15 @@ footer {
 
 @media all and (max-width: 1200px) {
   .container {
-    max-width: 100% !important;
-    padding: 0 25px; }
+    max-width: 100% !important; }
     .container section {
-      padding-right: 50px; } }
+      padding-left: 25px;
+      padding-right: 25px; } }
 @media all and (max-width: 970px) {
   section#hero {
     height: 270px; }
     section#hero h1 {
-      padding-top: 0; }
+      margin-top: -400px; }
     section#hero ul li {
       display: list-item; }
       section#hero ul li:after {
@@ -824,10 +836,11 @@ footer {
       display: none; }
 
   section#hero {
-    height: 145px;
+    height: 200px;
     padding-top: 35px; }
     section#hero h1 {
-      font-size: 40px; }
+      font-size: 40px;
+      margin-top: -370px; }
     section#hero ul li {
       font-size: 16px; }
   section h2 {

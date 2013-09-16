@@ -59,11 +59,8 @@
 </div>
 
 <section id="hero" data-type="background" data-speed="10">
-	<!-- <video autoplay loop class="fillWidth">
-	<source src="<?php bloginfo('template_url'); ?>/img/hero.mp4" type="video/mp4"/>
-	<source src="<?php bloginfo('template_url'); ?>/img/hero.ogg" type="video/ogg"/>
-	<source src="<?php bloginfo('template_url'); ?>/img/hero.webm" type="video/webm"/>
-	</video> -->
+	<div id="video">
+	</div>
 	<h1>DanNufer</h1>
 	<ul class="unstyled inline">
 		<li>UI Architect</li>
